@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Kylian.jpg" type="image/jpg">
+        <title>Juego | Triplicamos</title></head>
+<body data-page="inicio">
+    <header class="hd">
+        <a class="logo" href="index.html">TRIPLI<b>CAMOS</b></a>
+        <nav>
+            <a href="index.html" class="on">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="seguridad.html">Seguridad</a>
+        </nav>
+        <div class="favw">
+            <button id="fb" class="fb" aria-expanded="false">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg><span>Favoritos</span><i id="fc">0</i>
+            </button>
+            <div id="fp" class="fp" hidden></div>
+        </div>
+    </header>
+    <main>
+        <a class="back" href="index.html#juegos">← Volver a juegos</a>
+        <section class="det" id="det">
+            <div class="dimg">
+                <img id="d-img" alt="">
+            </div>
+            <div class="dinfo">
+                <span class="tag s" id="d-tag"></span>
+                <h1 id="d-name"></h1>
+                <p class="lead" id="d-desc"></p>
+                <ul class="meta">
+                    <li><small>Tipo</small><span id="d-type"></span></li>
+                    <li><small>Temática</small><span id="d-theme"></span></li>
+                    <li><small>Estudio</small><span id="d-studio"></span></li>
+                </ul>
+                <h2>Dónde jugar</h2>
+                <div class="where">
+                    <a class="btn" id="d-link" href="#" target="_blank" rel="noopener">Ir al sitio del estudio ↗</a>
+                    <button class="fav-btn wide" id="d-fav"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg><span>Favorito</span></button>
+                </div>
+                <p class="note">Es un juego de azar. En sitios externos puede implicar dinero real: es solo para mayores de 18 años. Jugá con responsabilidad.</p>
+            </div>
+        </section>
+        <h2 class="more-h">Más juegos</h2>
+        <div class="grid" id="more">
+            <article class="card" data-id="wanted">
+                <a class="ph" href="Juego.html?id=wanted">
+                    <img src="Wanted.webp" alt="Wanted" loading="lazy" decoding="async">
+                </a>
+                <h3>Wanted</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=wanted">Jugar</a>
+                    <button class="fav-btn" data-id="wanted" aria-label="Favorito: Wanted"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="slayer">
+                <a class="ph" href="Juego.html?id=slayer">
+                    <img src="Slayer.jpg" alt="Slayer" loading="lazy" decoding="async">
+                </a>
+                <h3>Slayer</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=slayer">Jugar</a>
+                    <button class="fav-btn" data-id="slayer" aria-label="Favorito: Slayer"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="eyepanda">
+                <a class="ph" href="Juego.html?id=eyepanda">
+                    <img src="EyeofPanda.webp" alt="Eye Panda" loading="lazy" decoding="async">
+                </a>
+                <h3>Eye Panda</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=eyepanda">Jugar</a>
+                    <button class="fav-btn" data-id="eyepanda" aria-label="Favorito: Eye Panda"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="kraken2">
+                <a class="ph" href="Juego.html?id=kraken2">
+                    <img src="Kraken.jpeg" alt="Kraken2" loading="lazy" decoding="async">
+                </a>
+                <h3>Kraken2</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=kraken2">Jugar</a>
+                    <button class="fav-btn" data-id="kraken2" aria-label="Favorito: Kraken2"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="aviamaster">
+                <a class="ph" href="Juego.html?id=aviamaster">
+                    <img src="AviaMaster.webp" alt="AviaMaster" loading="lazy" decoding="async">
+                </a>
+                <h3>AviaMaster</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=aviamaster">Jugar</a>
+                    <button class="fav-btn" data-id="aviamaster" aria-label="Favorito: AviaMaster"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="frkn">
+                <a class="ph" href="Juego.html?id=frkn">
+                    <img src="frkn.jpg" alt="FRKN" loading="lazy" decoding="async">
+                </a>
+                <h3>FRKN</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=frkn">Jugar</a>
+                    <button class="fav-btn" data-id="frkn" aria-label="Favorito: FRKN"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="lezeus">
+                <a class="ph" href="Juego.html?id=lezeus">
+                    <img src="lezeus.jpg" alt="Le Zeus" loading="lazy" decoding="async">
+                </a>
+                <h3>Le Zeus</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=lezeus">Jugar</a>
+                    <button class="fav-btn" data-id="lezeus" aria-label="Favorito: Le Zeus"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+            <article class="card" data-id="penalty">
+                <a class="ph" href="Juego.html?id=penalty">
+                    <img src="PenaltyShoot.jpeg" alt="Penalty" loading="lazy" decoding="async">
+                </a>
+                <h3>Penalty</h3>
+                <div class="act">
+                    <a class="btn sm" href="Juego.html?id=penalty">Jugar</a>
+                    <button class="fav-btn" data-id="penalty" aria-label="Favorito: Penalty"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.4-9.3 9-9.3 9z"/></svg></button>
+                </div>
+            </article>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
